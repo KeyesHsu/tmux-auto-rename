@@ -32,7 +32,7 @@ Automatic rename only in Git repositories.
 Default: `on`
 
 ```sh
-set -g @@auto-rename-git-only "off"
+set -g @auto-rename-git-only "off"
 ```
 
 ## Author
