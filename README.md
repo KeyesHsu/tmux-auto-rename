@@ -11,6 +11,11 @@ Automatical rename tmux window with current directory name.
 
 _**Note**_: Now only works when select pane.
 
+
+##### Resources:
+* [Changelog](CHANGELOG.md)
+
+
 ## Installation
 
 Clone the repo:

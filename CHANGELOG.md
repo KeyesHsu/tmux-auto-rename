@@ -11,5 +11,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatical rename tmux window with current directory name.
 
 
-[Unreleased]: https://github.com/KeyesHsu/alfred-tmux-workflow/compare/0.1.0...HEAD
-[0.1.0]: https://github.com/KeyesHsu/alfred-tmux-workflow/releases/tag/0.1.0
+[Unreleased]: https://github.com/KeyesHsu/tmux-auto-rename/compare/0.1.0...HEAD
+[0.1.0]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.1.0
