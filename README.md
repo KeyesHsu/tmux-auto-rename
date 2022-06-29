@@ -18,9 +18,9 @@ Clone the repo:
 $ git clone https://github.com/KeyesHsu/tmux-auto-rename ~/clone/path
 ```
 
-Add this line to the bottom of `.tmux.conf`:
+Add this line to your `.tmux.conf`:
 ```sh
-set-hook -g 'after-select-window' 'run-shell ~/clone/path/auto-rename.tmux'
+set-hook -g 'after-select-pane' 'run-shell ~/clone/path/auto-rename.tmux'
 ```
 
 ## Options
