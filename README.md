@@ -7,9 +7,9 @@
 </p>
 
 
-Automatical rename tmux window with tmux `pane_current_path` directory name.
+Automatical rename tmux window with current directory name.
 
-_**Note**_: Now only works when select windows.
+_**Note**_: Now only works when select pane.
 
 ## Installation
 
