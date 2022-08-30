@@ -13,17 +13,33 @@ check() {
     fi
 }
 
-rename_window() {
+get_current_dir() {
     if [ -z "$is_git" ]; then
-        local current_dir="$(basename "$( tmux display -p "#{pane_current_path}" )")"
+        current_dir="$(basename "$( tmux display -p "#{pane_current_path}" )")"
     else
-        local current_dir="$( cd "$( tmux display -p "#{pane_current_path}")" && basename $(git rev-parse --show-toplevel))"
+        current_dir="$( cd "$( tmux display -p "#{pane_current_path}")" && basename $(git rev-parse --show-toplevel))"
     fi
+}
+
+show_zoom_indicator() {
+    local zoom_indicator_=$(get_tmux_option "$zoom_indicator" "$default_zoom_indicator")
+    if [ $zoom_indicator_ == "on" ] && [ -n "$zoom_in" ]; then
+        current_dir="$current_dir(🔍️)"
+    fi
+}
+
+process_name() {
+    show_zoom_indicator
+}
+
+rename_window() {
     tmux rename-window $current_dir
 }
 
 main() {
     check
+    get_current_dir
+    process_name
     rename_window
 }
 main

@@ -46,6 +46,17 @@ Default: `on`
 set -g @auto-rename-git-only "off"
 ```
 
+### `@show-zoom-indicator`
+
+Show zoom indicator when rename.
+
+Default: `off`
+
+```sh
+set -g @show-zoom-indicator "on"
+set-hook -g 'after-resize-pane' 'run-shell ~/clone/path/auto-rename.tmux'
+```
+
 ## Author
 
 👤 **Keyes Hsu**
