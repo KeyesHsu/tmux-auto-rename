@@ -18,20 +18,28 @@ _**Note**_: Now only works when select pane.
 
 ## Installation
 
+### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+Add plugin to the list of TPM plugins in `.tmux.conf`:
+
+```tmux.conf
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+```
+
+Hit `prefix + I` to fetch the plugin and source it. You should now be able to use the plugin.
+
+### Manual Installation
+
 Clone the repo:
+
 ```sh
 $ git clone https://github.com/KeyesHsu/tmux-auto-rename ~/clone/path
 ```
 
 Add this line to your `.tmux.conf`:
-```tmux.conf
-set-hook -g 'after-select-pane' 'run-shell ~/clone/path/auto-rename.tmux'
-set-hook -g 'after-select-window' 'run-shell ~/clone/path/auto-rename.tmux'
-```
 
-Or trigger it manually with any key you like, e.g., `prefix + r`:
 ```tmux.conf
-bind-key r run-shell ~/clone/path/auto-rename.tmux
+run-shell ~/clone/path/auto-rename.tmux
 ```
 
 ## Options
