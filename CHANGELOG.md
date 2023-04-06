@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2023-04-06
+### Features
+- Support install with Tmux Plugin Manager.
+
 ## [0.2.0] - 2022-08-30
 ### Features
 - Show zoom indicator when rename.
@@ -15,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatical rename tmux window with current directory name.
 
 
-[Unreleased]: https://github.com/KeyesHsu/tmux-auto-rename/compare/0.2.0...HEAD
+[Unreleased]: https://github.com/KeyesHsu/tmux-auto-rename/compare/0.3.0...HEAD
+[0.3.0]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.3.0
 [0.2.0]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.2.0
 [0.1.0]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.1.0
