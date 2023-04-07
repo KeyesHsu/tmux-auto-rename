@@ -13,7 +13,7 @@ set_hooks() {
 
     local zoom_indicator_=$(get_tmux_option "$zoom_indicator" "$default_zoom_indicator")
     if [ $zoom_indicator_ == "on" ]; then
-        tmux set-hook -g 'after-resize-pane' 'run-shell /Users/keyes/Documents/code/tmux-auto-rename/auto-rename.tmux'
+        tmux set-hook -g "after-resize-pane" "run-shell $CURRENT_DIR/scripts/rename.sh"
     fi
 }
 

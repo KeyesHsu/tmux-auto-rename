@@ -62,7 +62,6 @@ Default: `off`
 
 ```sh
 set -g @show-zoom-indicator "on"
-set-hook -g 'after-resize-pane' 'run-shell ~/clone/path/auto-rename.tmux'
 ```
 
 ## Author
