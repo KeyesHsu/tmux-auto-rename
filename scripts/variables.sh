@@ -2,7 +2,7 @@
 git_only="@auto-rename-git-only"
 default_git_only="on"
 
-is_git="$(cd "$( tmux display -p "#{pane_current_path}" )" && git rev-parse --is-inside-work-tree)"
+is_git="$(cd "$( tmux display -p "#{pane_current_path}" )" && git rev-parse --is-inside-work-tree 2>/dev/null)"
 
 # Show zoom indicator when rename.
 zoom_indicator="@show-zoom-indicator"
