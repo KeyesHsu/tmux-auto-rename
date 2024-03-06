@@ -23,10 +23,16 @@ _**Note**_: Now only works when select pane.
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
 ```tmux.conf
-set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'KeyesHsu/tmux-auto-rename'
 ```
 
 Hit `prefix + I` to fetch the plugin and source it. You should now be able to use the plugin.
+
+If nothing works, try install via the command line:
+
+```sh
+~/.tmux/plugins/tpm/bin/install_plugins
+```
 
 ### Manual Installation
 
